@@ -1,10 +1,10 @@
-/* ═══════════════════════════════════════════════════════════
- *  oasm - OS/2026 Self-Hosted x86-32 Assembler
- *  Usage: run oasm input.asm output.elf
- *  Supports: mov,add,sub,and,or,xor,cmp,push,pop,inc,dec,
- *            jmp,je,jne,jl,jg,call,ret,int,nop,hlt,lea,
- *            shl,shr,mul,div,neg,not,test,db,dw,dd,equ
- * ═══════════════════════════════════════════════════════════ */
+
+ //  oasm - OS/2026 Self-Hosted x86-32 Assembler
+ // Usage: run oasm input.asm output.elf
+ // Supports: mov,add,sub,and,or,xor,cmp,push,pop,inc,dec,
+ //           jmp,je,jne,jl,jg,call,ret,int,nop,hlt,lea,
+ //            shl,shr,mul,div,neg,not,test,db,dw,dd,equ
+// 드디어 시발 어쌤블러를...
 
 /* ─── OS/2026 syscall wrappers ─── */
 static int sys(int n,int a,int b,int c){
